@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>เว็บไซต์สวย ๆ</title>
+  <style>
+    /* RESET */
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Prompt', sans-serif;
+      background: #f7f9fc;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #000000, #c51d1d);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #444;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #bd4a4a;
+    }
+
+    .btn {
+      background: #db0d18;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #3b5b9c;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service-box {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    /* Smooth scroll anchor offset */
+    html {
+      scroll-padding-top: 70px;
+    }
+  </style>
+</head>
+<body>
+
+    <header>
+        <h1>MY PAGE</h1>
+      
+        <!-- รูปการ์ตูน -->
+        <img src="https://wallpapers-clan.com/wp-content/uploads/2024/04/naruto-itachi-uchiha-aesthetic-anime-desktop-wallpaper-preview.jpg"
+             alt="ITACHI"
+             style="width: 200px; margin-top: 20px;">
+      </header>
+
+  <nav>
+    <a href="#about">เกี่ยวกับ</a>
+    <a href="#services">บริการ</a>
+    <a href="#contact">ติดต่อ</a>
+  </nav>
+
+  <section id="about">
+    <h2>เกี่ยวกับเรา</h2>
+    <p>เราคือทีมพัฒนาเว็บไซต์ที่ใส่ใจในทุกดีไซน์ ให้เว็บไซต์คุณดูดี ใช้งานง่าย รองรับมือถือ และทันสมัย</p>
+    <a class="btn" href="#contact">ติดต่อเรา</a>
+  </section>
+
+  <section id="services">
+    <h2>บริการของเรา</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>ออกแบบเว็บไซต์</h3>
+        <p>ออกแบบสวยงาม ทันสมัย เหมาะกับทุกธุรกิจ</p>
+      </div>
+      <div class="service-box">
+        <h3>เว็บแอปพลิเคชัน</h3>
+        <p>พัฒนาเว็บแอปที่ตอบโจทย์และทำงานได้จริง</p>
+      </div>
+      <div class="service-box">
+        <h3>ปรับแต่ง SEO</h3>
+        <p>ทำให้เว็บไซต์ของคุณติดอันดับ Google</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>ติดต่อเรา</h2>
+    <form>
+      <input type="text" placeholder="ชื่อของคุณ" required>
+      <input type="email" placeholder="อีเมล" required>
+      <textarea rows="5" placeholder="ข้อความของคุณ" required></textarea>
+      <button type="submit" class="btn">ส่งข้อความ</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 เว็บไซต์ของคุณ | ติดต่อ: example@email.com</p>
+  </footer>
+
+</body>
+</html>
